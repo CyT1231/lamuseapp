@@ -1,0 +1,21 @@
+{
+  "name": "La Muse",
+  "short_name": "La Muse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#D8B4A0",
+  "description": "La Muse PWA \u2014 Promotions, Events, and My Profile.",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

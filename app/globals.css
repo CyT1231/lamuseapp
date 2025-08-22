@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: #fff; --fg: #222; --brand: #D8B4A0; }
+html, body { height: 100%; background: var(--bg); color: var(--fg); }
+.card { @apply rounded-2xl shadow p-4 bg-white; }
+
+/* Hide scrollbars on the carousel */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
