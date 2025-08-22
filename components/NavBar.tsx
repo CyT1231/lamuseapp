@@ -2,8 +2,9 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import type { Route } from 'next';   // 👈 add this
 
-const tabs = [
+const tabs: { href: Route; label: string }[] = [
   { href: '/', label: 'Home' },
   { href: '/promotions', label: 'Promotions' },
   { href: '/events', label: 'Events' },
@@ -17,7 +18,10 @@ export default function NavBar() {
       <ul className="flex items-center justify-around py-2">
         {tabs.map(t => (
           <li key={t.href}>
-            <Link href={t.href} className={clsx('px-3 py-1 rounded-full', pathname===t.href && 'bg-brand text-white')}>
+            <Link
+              href={t.href}
+              className={clsx('px-3 py-1 rounded-full', pathname === t.href && 'bg-brand text-white')}
+            >
               {t.label}
             </Link>
           </li>
